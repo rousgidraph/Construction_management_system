@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F37329</color>
+    <color name="colorPrimaryDark">#FF5722</color>
+    <color name="colorAccent">#F44336</color>
+    <color name="duller_white">#EBEBEB</color>
+    <color name = "white">#ffffff</color>
+    <color name="dull_white">#ECEBEB</color>
+    <color name="vibrant_green">#38E667</color>
+    <color name="yellow">#F4AB18</color>
+    <color name="dark_red">#E64438</color>
+    <color name="orange_1">#F37329</color>
+    <color name="dull_green">#25CAA9</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_80">#37474F</color>
+    <color name="light_grey">#707070</color>
+    <color name="dull_red">#E44A4A</color>
+    <color name="another_red">#F13111</color>
+    <color name="text_grey">#726B6B</color>
+    <color name="black">#000000</color>
+
+
+</resources>

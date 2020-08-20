@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".New_labourer">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="139dp"
+        android:layout_height="140dp"
+
+        android:layout_marginTop="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_circle" />
+
+    <EditText
+        android:id="@+id/input_firstName"
+        android:layout_width="287dp"
+        android:gravity="center"
+        android:layout_height="42dp"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:background="@drawable/input_field_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/input_last_name"
+        android:layout_width="287dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/input_field_grey"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+
+
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_firstName" />
+
+    <EditText
+        android:id="@+id/input_phone"
+        android:layout_width="287dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/input_field_grey"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Phone number"
+        android:inputType="phone"
+
+
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_wage" />
+
+    <EditText
+        android:id="@+id/input_specialty"
+        android:layout_width="287dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/input_field_grey"
+        android:ems="10"
+        android:gravity="center"
+
+
+        android:hint="Specialty"
+        android:inputType="textPersonName"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_last_name" />
+
+    <EditText
+        android:id="@+id/input_wage"
+        android:layout_width="287dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/input_field_grey"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Weekly Wage"
+        android:inputType="number"
+
+
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_specialty" />
+
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/input_specialty"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/input_specialty"
+        app:layout_constraintTop_toTopOf="@+id/input_specialty"
+        app:srcCompat="@drawable/specialty_indicator" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="155dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/gradient_buttons"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/duller_white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_phone" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="155dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/gradient_buttons"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/duller_white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_phone" />
+
+    <TextView
+        android:id="@+id/title_new_labourer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Labourer"
+        android:textSize="25dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

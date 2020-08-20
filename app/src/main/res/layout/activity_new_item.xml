@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_item">
+
+    <Button
+        android:id="@+id/btn_save_item"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/orange_buttons"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_cancel" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="New Item"
+        android:textSize="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_item_name"
+        android:layout_width="308dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_field_grey"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Item Name"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_title" />
+
+    <EditText
+        android:id="@+id/input_description"
+        android:layout_width="308dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/less_rounded_corners"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="Item Description"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/input_item_name"
+        app:layout_constraintTop_toBottomOf="@+id/input_item_name" />
+
+    <EditText
+        android:id="@+id/input_units"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/input_field_grey"
+        android:hint="Unit of measure"
+        app:layout_constraintStart_toStartOf="@+id/input_description"
+        app:layout_constraintTop_toBottomOf="@+id/input_description" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/orange_buttons"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_units" />
+
+    <TextView
+        android:id="@+id/text_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="back"
+        android:textAllCaps="false"
+        android:textColor="@color/orange_1"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

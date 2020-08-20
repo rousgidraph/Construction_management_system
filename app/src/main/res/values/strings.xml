@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Third_year</string>
+
+    <string name="tab_text_2">Home</string>
+    <string name="tab_text_3">Inventory</string>
+    <string name="tab_text_4">Labourers</string>
+
+
+</resources>

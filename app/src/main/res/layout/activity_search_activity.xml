@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    tools:context=".search_activity">
+
+    <EditText
+        android:id="@+id/input_search_item"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/outlined_input"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Search Item"
+        android:inputType="textPersonName"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_title" />
+
+    <Button
+        android:id="@+id/btn_search_items"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:textColor="@color/white"
+        android:text="Search"
+        android:textSize="19dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/orange_buttons"
+        android:drawableEnd="@drawable/search_white"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_results_item" />
+
+    <TextView
+        android:id="@+id/search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Search"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/search_results_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/barely_curver_edges"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_search_item" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/search_result_count"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:hint="results"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_results_item" />
+
+    <TextView
+        android:id="@+id/no_results_found"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="No results found"
+        app:layout_constraintBottom_toTopOf="@+id/btn_search_items"
+        app:layout_constraintEnd_toEndOf="@+id/search_results_item"
+        app:layout_constraintStart_toStartOf="@+id/search_results_item"
+        app:layout_constraintTop_toTopOf="@+id/search_results_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.third_year_project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/custom_launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity android:name=".Graphs.bar_graph"
+            android:theme="@style/Topless"/>
+        <activity
+            android:name=".Graphs.Pie_graph"
+            android:theme="@style/Topless" />
+        <activity
+            android:name=".history_activity"
+            android:theme="@style/Topless" />
+        <activity
+            android:name=".search_worker"
+            android:theme="@style/Topless" />
+        <activity
+            android:name=".Grraph_activity"
+            android:theme="@style/Topless" />
+        <activity
+            android:name=".reports_activity"
+            android:theme="@style/Topless" />
+        <activity
+            android:name=".help_activity"
+            android:theme="@style/Topless" />
+        <activity
+            android:name=".search_activity"
+            android:theme="@style/Topless" />
+        <activity
+            android:name=".view_inventory"
+            android:theme="@style/Topless" />
+        <activity
+            android:name=".New_purchase"
+            android:theme="@style/Topless" />
+        <activity
+            android:name=".edit_labourer"
+            android:theme="@style/Topless" />
+        <activity
+            android:name=".new_item"
+            android:theme="@style/Topless" />
+        <activity
+            android:name=".New_labourer"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Topless" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
