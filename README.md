@@ -22,7 +22,7 @@ This project is still underconstruction (🏗️:construction: :wrench:_lol_:smi
 
 ## How do i go about this?
 
-Well thanks for asking, simply put. Clone this repo on your machine and import the project onto android studio, basically thats it. Connect your android device make changes to the code and view it.
+Well thanks for asking, simply put: Clone this repo on your machine and import the project onto android studio, basically thats it. Connect your android device make changes to the code and view it.
 
 ---
 
@@ -32,6 +32,6 @@ Well thanks for asking, simply put. Clone this repo on your machine and import t
 1. Do i need _coffee_ while going through this ? 
 Ans: Always, you **always** need coffee.:coffee:
 3. Can I use this as my own ?
-Ans:  While this project is mostly my own, contribution are open to all. So, short answer, for fun and personal use yes, for commercial puporses get in touch with me.
+Ans:  While this project is mostly my own, contribution is open to all. So, short answer, for fun and personal use yes, for commercial puporses get in touch with me.
 
 
